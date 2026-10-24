@@ -1,0 +1,31 @@
+import {test,expect} from '@playwright/test';
+test('mobile family planning, completion persistence and condition changes',async({page})=>{
+ await page.setViewportSize({width:390,height:844});
+ const errors=[];page.on('pageerror',e=>errors.push(e.message));
+ await page.goto('/');
+ await page.locator('[name=departure]').fill('2027-06-01');
+ await page.getByRole('button',{name:'わが家の準備リストをつくる'}).click();
+ await expect(page.getByRole('heading',{name:'わが家の、留学準備。'})).toBeVisible();
+ const check=page.getByRole('checkbox',{name:'親子のパスポートを確認するを完了'});
+ await check.check();await page.reload();await expect(check).toBeChecked();
+ await page.getByRole('button',{name:'プランを変更'}).click();
+ await page.locator('[name=activity][value=nomad]').check();
+ await page.getByRole('button',{name:'プランを更新する'}).click();
+ await expect(page.getByRole('heading',{name:'DE Rantauの申請条件を確認'})).toBeVisible();
+ await expect(page.getByRole('heading',{name:'付き添いの滞在資格を確認する'})).toHaveCount(0);
+ await page.getByRole('button',{name:'完了',exact:true}).click();
+ await expect(page.locator('.task')).toHaveCount(1);
+ await expect(page.getByRole('heading',{name:'親子のパスポートを確認する'})).toBeVisible();
+ expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+ expect(errors).toEqual([]);
+});
+test('production app loads offline after initial visit',async({page,context})=>{
+ await page.goto('/');
+ await page.evaluate(()=>navigator.serviceWorker.ready);
+ await page.reload();await expect(page.locator('#profile-form')).toBeVisible();
+ await page.waitForFunction(()=>!!navigator.serviceWorker.controller);
+ await context.setOffline(true);await page.reload();
+ await expect(page.locator('#profile-form')).toBeVisible();
+ await page.getByRole('button',{name:'わが家の準備リストをつくる'}).click();
+ await expect(page.getByRole('heading',{name:'わが家の、留学準備。'})).toBeVisible();
+});

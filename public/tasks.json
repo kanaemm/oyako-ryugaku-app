@@ -1,0 +1,308 @@
+[
+  {
+    "id": "family",
+    "category": 0,
+    "daysBefore": 180,
+    "title": "家族で、留学の目的を話そう",
+    "description": "留学で大切にしたいこと、期間、家族の役割を話し合いましょう。",
+    "note": "期間や出発日は、あとから変更できます。",
+    "conditions": {},
+    "status": "needs-review",
+    "lastVerified": null,
+    "sourceLabel": null,
+    "sourceUrl": null
+  },
+  {
+    "id": "budget",
+    "category": 0,
+    "daysBefore": 180,
+    "title": "留学全体の予算を立てる",
+    "description": "学費・住居・生活費・保険・渡航費と、予備費を書き出しましょう。",
+    "note": "現地での収入がなくても生活できる資金計画を。",
+    "conditions": {},
+    "status": "needs-review",
+    "lastVerified": null,
+    "sourceLabel": null,
+    "sourceUrl": null
+  },
+  {
+    "id": "passport",
+    "category": 1,
+    "daysBefore": 150,
+    "title": "親子のパスポートを確認する",
+    "description": "有効期限と、希望する学校・滞在資格に必要な残存期間を確認しましょう。",
+    "note": "必要な残存期間は未確認です。入管と学校に確認し、必要なら日本で更新を。",
+    "conditions": {},
+    "status": "needs-review",
+    "lastVerified": null,
+    "sourceLabel": "外務省・パスポート",
+    "sourceUrl": "https://www.mofa.go.jp/mofaj/toko/passport/"
+  },
+  {
+    "id": "work",
+    "category": 2,
+    "daysBefore": 180,
+    "title": "職場候補と就労パスの見込みを確認",
+    "description": "雇用主に申請方法・所要期間・子どもの帯同条件を確認しましょう。",
+    "note": "職場の場所を踏まえて通える学校を探しましょう。",
+    "conditions": {
+      "activity": [
+        "work"
+      ]
+    },
+    "status": "needs-review",
+    "lastVerified": null,
+    "sourceLabel": "マレーシア入管局",
+    "sourceUrl": "https://www.imi.gov.my/"
+  },
+  {
+    "id": "nomad",
+    "category": 2,
+    "daysBefore": 150,
+    "title": "DE Rantauの申請条件を確認",
+    "description": "職種、収入証明、家族の帯同条件を公式窓口で確認しましょう。",
+    "note": "年収条件は未確認です。これから得る予定の収入だけで判断しないでください。",
+    "conditions": {
+      "activity": [
+        "nomad"
+      ]
+    },
+    "status": "needs-review",
+    "lastVerified": null,
+    "sourceLabel": "MDEC・DE Rantau",
+    "sourceUrl": "https://mdec.my/derantau"
+  },
+  {
+    "id": "study",
+    "category": 2,
+    "daysBefore": 270,
+    "title": "母親の学校と英語要件を調べる",
+    "description": "必要なIELTS・TOEFLのスコアと、英語の卒業・成績証明書を確認しましょう。",
+    "note": "準備期間は人によります。子どもの帯同可否は学校・入管に個別に確認を。",
+    "conditions": {
+      "activity": [
+        "study"
+      ]
+    },
+    "status": "needs-review",
+    "lastVerified": null,
+    "sourceLabel": "マレーシア入管局",
+    "sourceUrl": "https://www.imi.gov.my/"
+  },
+  {
+    "id": "dependent",
+    "category": 2,
+    "daysBefore": 180,
+    "title": "学生パスで子どもを帯同できるか確認",
+    "description": "希望する課程での家族帯同条件を、学校と入管に書面で確認しましょう。",
+    "note": "引き継ぎメモには大学院レベルに限るとの記載がありますが、最新条件は未検証です。",
+    "conditions": {
+      "activity": [
+        "study"
+      ]
+    },
+    "status": "needs-review",
+    "lastVerified": null,
+    "sourceLabel": "マレーシア入管局",
+    "sourceUrl": "https://www.imi.gov.my/"
+  },
+  {
+    "id": "guardian",
+    "category": 2,
+    "daysBefore": 150,
+    "title": "付き添いの滞在資格を確認する",
+    "description": "ガーディアンの滞在資格、必要書類、更新手続きを学校・入管に確認しましょう。",
+    "note": "就労・事業活動の制限に注意。日本向けリモートワークも可と判断せず、入管または移民弁護士に書面で確認を。",
+    "conditions": {
+      "activity": [
+        "guardian"
+      ]
+    },
+    "status": "needs-review",
+    "lastVerified": null,
+    "sourceLabel": "マレーシア入管局",
+    "sourceUrl": "https://www.imi.gov.my/"
+  },
+  {
+    "id": "school",
+    "category": 3,
+    "daysBefore": 150,
+    "title": "子どもの学校選びの軸を決める",
+    "description": "英語、多様性、アクティビティ、通学距離など、家族の優先順位を整理しましょう。",
+    "note": "学費だけでなく、少人数制や英語のフォロー体制も確認を。",
+    "conditions": {},
+    "status": "needs-review",
+    "lastVerified": null,
+    "sourceLabel": "文部科学省",
+    "sourceUrl": "https://www.mext.go.jp/"
+  },
+  {
+    "id": "visit",
+    "category": 3,
+    "daysBefore": 120,
+    "title": "学校に入学条件と空き状況を聞く",
+    "description": "入学時期、必要書類、見学や面談、子どもの学生パスについて問い合わせましょう。",
+    "note": "申請の締切は学校ごとに異なります。",
+    "conditions": {},
+    "status": "needs-review",
+    "lastVerified": null,
+    "sourceLabel": "文部科学省",
+    "sourceUrl": "https://www.mext.go.jp/"
+  },
+  {
+    "id": "nursery",
+    "category": 3,
+    "daysBefore": 60,
+    "title": "日本の園に退園・転園の相談をする",
+    "description": "保育園・幼稚園と自治体に必要な手続きと期限を確認しましょう。",
+    "note": "帰国後の再入園条件もあわせて相談を。",
+    "conditions": {
+      "children": [
+        "preschool"
+      ]
+    },
+    "status": "needs-review",
+    "lastVerified": null,
+    "sourceLabel": "文部科学省",
+    "sourceUrl": "https://www.mext.go.jp/"
+  },
+  {
+    "id": "transfer",
+    "category": 3,
+    "daysBefore": 60,
+    "title": "日本の学校に海外転出を相談する",
+    "description": "在籍校と教育委員会に、海外転出時の学校の手続きを確認しましょう。",
+    "note": "休学・転出などの扱いを自己判断せず、在籍校に確認してください。",
+    "conditions": {
+      "children": [
+        "elementary",
+        "secondary"
+      ]
+    },
+    "status": "needs-review",
+    "lastVerified": null,
+    "sourceLabel": "文部科学省",
+    "sourceUrl": "https://www.mext.go.jp/"
+  },
+  {
+    "id": "learning",
+    "category": 3,
+    "daysBefore": 60,
+    "title": "帰国に向けた日本の学習を考える",
+    "description": "家庭学習の時間や教材、海外で使用する教科書について在籍校に相談しましょう。",
+    "note": "教科書の受け取り方法と対象学年は学校に確認を。",
+    "conditions": {
+      "duration": [
+        "year"
+      ],
+      "children": [
+        "elementary",
+        "secondary"
+      ]
+    },
+    "status": "needs-review",
+    "lastVerified": null,
+    "sourceLabel": "文部科学省",
+    "sourceUrl": "https://www.mext.go.jp/"
+  },
+  {
+    "id": "future",
+    "category": 3,
+    "daysBefore": 90,
+    "title": "長期の進路と日本語学習を話す",
+    "description": "日本の学習をどこまで続けるか、将来の受験も含め家族で話しましょう。",
+    "note": "子どもの希望や負担を踏まえ、定期的に見直しましょう。",
+    "conditions": {
+      "duration": [
+        "move"
+      ]
+    },
+    "status": "needs-review",
+    "lastVerified": null,
+    "sourceLabel": "文部科学省",
+    "sourceUrl": "https://www.mext.go.jp/"
+  },
+  {
+    "id": "license",
+    "category": 4,
+    "daysBefore": 60,
+    "title": "日本の免許の有効期限を確認する",
+    "description": "海外滞在中に期限が切れないか、早期更新が必要か確認しましょう。",
+    "note": "更新条件と必要書類は免許センターで確認を。",
+    "conditions": {
+      "driving": [
+        "yes"
+      ]
+    },
+    "status": "needs-review",
+    "lastVerified": null,
+    "sourceLabel": "警察庁",
+    "sourceUrl": "https://www.npa.go.jp/"
+  },
+  {
+    "id": "international",
+    "category": 4,
+    "daysBefore": 30,
+    "title": "現地で運転するための条件を調べる",
+    "description": "国際運転免許の使用可否・有効期間と、現地免許の条件を確認しましょう。",
+    "note": "日本の免許も有効である必要があります。渡航先と滞在期間によって条件が異なります。",
+    "conditions": {
+      "driving": [
+        "yes"
+      ]
+    },
+    "status": "needs-review",
+    "lastVerified": null,
+    "sourceLabel": "警察庁",
+    "sourceUrl": "https://www.npa.go.jp/"
+  },
+  {
+    "id": "income",
+    "category": 5,
+    "daysBefore": 120,
+    "title": "海外から働ける条件を確認する",
+    "description": "勤務先・クライアントの海外居住ルールと、滞在資格の就労条件をそれぞれ確認しましょう。",
+    "note": "仕事の契約があっても、現地で就労できるとは限りません。",
+    "conditions": {
+      "activity": [
+        "work",
+        "nomad"
+      ]
+    },
+    "status": "needs-review",
+    "lastVerified": null,
+    "sourceLabel": "外務省・海外安全",
+    "sourceUrl": "https://www.anzen.mofa.go.jp/"
+  },
+  {
+    "id": "admin",
+    "category": 5,
+    "daysBefore": 60,
+    "title": "住民票・税金・保険を相談する",
+    "description": "自治体と勤務先に、海外転出届、住民税、社会保険などの扱いを確認しましょう。",
+    "note": "期間や退職の有無で手続きが変わります。",
+    "conditions": {
+      "duration": [
+        "year",
+        "move"
+      ]
+    },
+    "status": "needs-review",
+    "lastVerified": null,
+    "sourceLabel": "外務省・海外安全",
+    "sourceUrl": "https://www.anzen.mofa.go.jp/"
+  },
+  {
+    "id": "insurance",
+    "category": 5,
+    "daysBefore": 30,
+    "title": "医療保険と緊急時の連絡先を確認する",
+    "description": "親子の医療費に備える保険、学校の保険、近くの医療機関を確認しましょう。",
+    "note": "補償期間、既往症、免責、緊急搬送の条件も確認を。",
+    "conditions": {},
+    "status": "needs-review",
+    "lastVerified": null,
+    "sourceLabel": "外務省・海外安全",
+    "sourceUrl": "https://www.anzen.mofa.go.jp/"
+  }
+]
