@@ -213,6 +213,7 @@ function result(){
  ${k==='short'?'':`<div class="alt" style="border-color:var(--c);background:color-mix(in srgb,var(--c) 8%,transparent)"><b>日本で先に準備しておくもの</b><br>戸籍・出生証明の英訳や認証（公的書類であることの証明手続き）など。現地に着いてからでは取り寄せに時間がかかります。${'学校探し・出願・ビザ・仕事の調整を並行すると、思った以上に時間がかかります。'}</div>`}
  ${r.docs?`<h3>必要書類チェックリスト（作者の例）</h3><p class="lbl">学校によって違うので、必ず自分の学校のリストで確認してください。チェックはこの画面の中だけで使えます。</p>${r.docs.map(([h,items])=>`<p class="dh">${h}</p><ul class="chk">${items.map(t=>`<li><label><input type="checkbox"><span>${t}</span></label></li>`).join('')}</ul>`).join('')}<h3>つまずいたところ（作者の体験から）</h3><ul class="notes">${r.tips.map(t=>`<li>${t}</li>`).join('')}</ul>`:''}
  <h3>知っておきたいこと</h3><ul class="notes">${r.notes.map(n=>`<li>${n}</li>`).join('')}</ul>
+ <a class="note" href="../" style="margin-top:24px"><span>次は、このルートの準備リストをつくろう<br><small style="font-weight:400;color:var(--sub)">おやこ旅支度：滞在期間や過ごし方から、わが家の準備TODOを作れます</small></span><i>つくる →</i></a>
  <div class="nav"><button class="btn" id="back">ひとつ戻る</button><button class="btn pri" id="re">最初からやり直す</button></div></div>`;
  document.getElementById('back').onclick=back;
  document.getElementById('re').onclick=()=>{ans={};hist=[];render()};

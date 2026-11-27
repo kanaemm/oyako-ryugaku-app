@@ -1,8 +1,8 @@
 const ROOT = new URL(self.registration.scope).pathname;
-const CACHE = `oyako-${ROOT}-v2`;
+const CACHE = `oyako-${ROOT}-v3`;
 const local = path => `${ROOT}${path}`;
 self.addEventListener('install', event => {
- event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(['', 'tasks.json', 'icon.svg', 'manifest.webmanifest'].map(local))));
+ event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(['', 'tasks.json', 'icon.svg', 'manifest.webmanifest', 'kana.jpg'].map(local))));
 });
 self.addEventListener('activate', event => {
  event.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(k => k.startsWith(`oyako-${ROOT}-`) && k !== CACHE).map(k => caches.delete(k)))).then(() => self.clients.claim()));
